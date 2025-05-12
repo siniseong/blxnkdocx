@@ -41,7 +41,7 @@ export default function HomePage() {
 
           <section className="mx-auto w-full max-w-6xl flex flex-wrap justify-center items-stretch gap-8">
             <HomeCard
-              name='Pawnote'
+              name='frotend'
               description='A purrfect API wrapper for PRONOTE'
             />
             <HomeCard
