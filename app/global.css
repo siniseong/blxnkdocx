@@ -2,21 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  /* 기존 Lucide Chevron 숨기기 */
-  .lucide-chevron-down {
-    display: none !important;
-  }
-
-  /* 커스텀 아이콘 추가 */
-  button[aria-haspopup="dialog"]::after {
-    content: '';
-    display: inline-block;
-    width: 20px; /* size-5에 맞게 */
-    height: 20px;
-    margin-left: 0.5rem;
-    vertical-align: middle;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.53 3.47a.75.75 0 0 0-1.06 0L6.22 6.72a.75.75 0 0 0 1.06 1.06L10 5.06l2.72 2.72a.75.75 0 1 0 1.06-1.06l-3.25-3.25Zm-4.31 9.81 3.25 3.25a.75.75 0 0 0 1.06 0l3.25-3.25a.75.75 0 1 0-1.06-1.06L10 14.94l-2.72-2.72a.75.75 0 0 0-1.06 1.06Z" clip-rule="evenodd"/></svg>') no-repeat center;
-    background-size: contain;
-  }
-}
