@@ -5,14 +5,14 @@
 
   export const baseOptions: HomeLayoutProps = {
     nav: {
-      title: 'LiterateInk',
+      title: '여백, 면접을 도와드립니다.',
     },
   };
 
   export const docsOptions: DocsLayoutProps = {
     ...baseOptions,
     tree: source.pageTree,
-    githubUrl: "https://github.com/ LiterateInk",
+    githubUrl: "https://github.com/siniseong",
     sidebar: {
       banner: (
         <RootToggle
