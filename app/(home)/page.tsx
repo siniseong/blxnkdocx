@@ -6,8 +6,8 @@ import { HomeCard } from '@/components/HomeCard';
 const navLinks = [
   {
     text: 'Docs',
-    url: 'https://literate.ink',
-  },
+    url: '/frotend',
+  },  
   {
     text: 'Contribution',
     url: '/',
@@ -22,7 +22,7 @@ export default function HomePage() {
 
     <div className="flex items-center">
       <a href="/" className="flex items-center gap-2 font-semibold">
-        <p>여백</p>
+        <p>여백,</p>
       </a>
     </div>
 
@@ -36,14 +36,19 @@ export default function HomePage() {
           {link.text}
         </a>
       ))}
-      <a
-        href="https://github.com/siniseong/docx-"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-sm font-medium text-neutral-700 hover:text-primary transition-colors dark:text-neutral-300 dark:hover:text-primary"
-      >
-        GitHub
-      </a>
+<a
+  href="https://github.com/siniseong/docx-"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-sm font-medium text-neutral-700 hover:text-primary transition-colors dark:text-neutral-300 dark:hover:text-primary"
+>
+  <img 
+    src="/github.svg" 
+    alt="GitHub" 
+    className="h-6 w-6 dark:invert" 
+  />
+</a>
+
     </nav>
   </div>
 </header>
