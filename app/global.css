@@ -208,3 +208,16 @@ table:last-of-type a:focus,
 .contributor-name {
   font-weight: 400 !important;
 }
+
+.prose .lucide-link {
+  display: none !important;
+}
+.prose h2:hover::after,
+.prose h3:hover::after {
+  content: '#';
+  opacity: 1;
+  margin-left: 0.5rem;
+  color: #bbbbbb;
+  font-size: 20px;
+  transition: opacity 0.2s;
+}
