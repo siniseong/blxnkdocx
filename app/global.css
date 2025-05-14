@@ -241,3 +241,14 @@ table:last-of-type a:focus,
 #nd-sidebar > div:first-child {
   margin-bottom: -1.5rem !important;
 }
+
+.prose h1 + p {
+  margin-top: -1rem !important;
+}
+
+
+article {
+  margin-top: -20px;
+}
+
+
