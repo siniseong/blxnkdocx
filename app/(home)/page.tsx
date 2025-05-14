@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { LinkItemType } from 'fumadocs-ui/layout';
 import React from 'react';
 import { HomeCard } from '@/components/HomeCard';
+import { Header } from '@/components/Header';
 
 const navLinks = [
   {
@@ -17,43 +18,7 @@ const navLinks = [
 export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col">
-<header className="sticky top-0 z-40 w-full border-b border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950">
-<div className="grid grid-cols-2 h-14 items-center px-4 sm:px-6 mx-auto" style={{ maxWidth: '1420px' }}>
-
-    <div className="flex items-center">
-      <a href="/" className="flex items-center gap-2 font-semibold">
-        <p>여백,</p>
-      </a>
-    </div>
-
-    <nav className="flex items-center justify-end space-x-6">
-      {navLinks.map((link) => (
-        <a
-          key={link.text}
-          href={link.url}
-          className="text-sm font-medium text-neutral-700 hover:text-primary transition-colors dark:text-neutral-300 dark:hover:text-primary"
-        >
-          {link.text}
-        </a>
-      ))}
-<a
-  href="https://github.com/siniseong/docx-"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-sm font-medium text-neutral-700 hover:text-primary transition-colors dark:text-neutral-300 dark:hover:text-primary"
->
-  <img 
-    src="/github.svg" 
-    alt="GitHub" 
-    className="h-6 w-6 dark:invert" 
-  />
-</a>
-
-    </nav>
-  </div>
-</header>
-
-
+      <Header />
 
       <div className="flex-grow grid" style={{ "gridTemplateRows": "1fr auto"}}>
         <main className="overflow-hidden relative w-full pt-8 px-4 lg:px-0 space-y-16 pb-48">
