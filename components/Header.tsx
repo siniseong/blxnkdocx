@@ -28,7 +28,7 @@ export function Header() {
               href={link.url}
               className="text-sm font-medium text-neutral-700 hover:text-primary transition-colors dark:text-neutral-300 dark:hover:text-primary"
             >
-              {link.text}
+              <span>{link.text}</span>
             </a>
           ))}
           <a

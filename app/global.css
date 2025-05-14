@@ -128,3 +128,61 @@ a {
   color: #fff !important;
   text-decoration: none !important;
 }
+
+table:last-of-type {
+  margin-left: 0 !important;
+}
+table:last-of-type tr {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.25rem;
+  justify-content: flex-start;
+}
+table:last-of-type td {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  border: none !important;
+  background: none !important;
+  padding: 0 !important;
+}
+table:last-of-type img {
+  width: 110px !important;
+  height: 110px !important;
+  object-fit: cover;
+  border-radius: 0 !important;
+  display: block;
+  margin: 0 auto;
+}
+table:last-of-type span,
+table:last-of-type td[align="center"] {
+  display: block;
+  height: auto;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 0;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+table:last-of-type a {
+  /* pointer-events: none; */
+  color: inherit !important;
+  text-decoration: none !important;
+  /* cursor: default !important; */
+}
+table:last-of-type a:hover,
+table:last-of-type a:active,
+table:last-of-type a:focus,
+.contributor-name:hover,
+.contributor-name:active,
+.contributor-name:focus {
+  color: inherit !important;
+  text-decoration: none !important;
+  background: none !important;
+}
+
+.contributor-name {
+  font-weight: 400 !important;
+}
