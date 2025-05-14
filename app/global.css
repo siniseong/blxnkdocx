@@ -237,3 +237,7 @@ table:last-of-type a:focus,
 #nd-sidebar .lucide-ellipsis {
   display: none !important;
 }
+
+#nd-sidebar > div:first-child {
+  margin-bottom: -1.5rem !important;
+}
