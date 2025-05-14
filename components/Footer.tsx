@@ -32,7 +32,7 @@ export function Footer() {
 
   return (
     <footer className="mt-auto border-t border-border py-4 text-sm text-neutral-800 dark:text-neutral-200">
-      <div className="flex items-center justify-between max-w-4xl mx-auto px-4">
+      <div className="flex items-center justify-between max-w-[1420px] mx-auto px-4">
         <div>
           Developed by{" "}
           <a

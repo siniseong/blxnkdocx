@@ -13,7 +13,7 @@ export default function HomeLayout({
       <Header />
       <div className="flex-grow grid" style={{ "gridTemplateRows": "1fr auto"}}>
         <main className="overflow-hidden relative w-full pt-4 px-4 lg:px-0 space-y-8 pb-32">
-          <section className="mx-auto w-full max-w-[1260px] overflow-x-hidden">
+          <section className="mx-auto w-full max-w-[1390px] overflow-x-hidden">
             <div 
               className={cn(
                 "relative flex flex-col z-10",
