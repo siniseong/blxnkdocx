@@ -16,7 +16,7 @@ export function Header() {
     <header className="sticky top-0 z-40 w-full border-b border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950">
       <div className="grid grid-cols-2 h-14 items-center px-4 sm:px-6 mx-auto" style={{ maxWidth: '1420px' }}>
         <div className="flex items-center">
-          <a href="/" className="flex items-center gap-2 font-semibold">
+          <a href="/" className="flex items-center gap-2 font-semibold text-neutral-800 dark:text-neutral-200">
             <span className="text-lg">여백,</span>
           </a>
         </div>
@@ -26,7 +26,7 @@ export function Header() {
             <a
               key={link.text}
               href={link.url}
-              className="text-sm font-medium text-neutral-700 hover:text-primary transition-colors dark:text-neutral-300 dark:hover:text-primary"
+              className="text-sm font-medium text-neutral-800 dark:text-neutral-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               <span>{link.text}</span>
             </a>
@@ -35,7 +35,7 @@ export function Header() {
             href="https://github.com/siniseong/docx-"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium text-neutral-700 hover:text-primary transition-colors dark:text-neutral-300 dark:hover:text-primary"
+            className="text-sm font-medium text-neutral-800 dark:text-neutral-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
             <img 
               src="/github.svg" 

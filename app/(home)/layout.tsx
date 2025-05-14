@@ -17,7 +17,7 @@ export default function HomeLayout({
             <div 
               className={cn(
                 "relative flex flex-col z-10",
-                "prose prose-gray dark:prose-invert max-w-none tight-paragraphs",
+                "prose prose-zinc dark:prose-invert max-w-none tight-paragraphs",
                 "prose-headings:font-bold prose-headings:tracking-tight",
                 "prose-h1:text-4xl prose-h1:lg:text-5xl prose-h1:mt-8",
                 "prose-h2:text-2xl prose-h2:mb-2",
