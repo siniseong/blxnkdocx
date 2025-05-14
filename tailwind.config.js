@@ -41,6 +41,24 @@ export default {
               paddingTop: '0',
               paddingBottom: '0',
             },
+            'blockquote': {
+              marginTop: '0.5em',
+              marginBottom: '0.5em',
+              paddingTop: '0.5em',
+              paddingBottom: '0.5em',
+              fontStyle: 'normal',
+              paddingLeft: '1em',
+            },
+            'blockquote p': {
+              marginTop: '0',
+              marginBottom: '0',
+            },
+            'blockquote::before': {
+              content: 'none',
+            },
+            'blockquote::after': {
+              content: 'none',
+            },
           },
         },
       },
