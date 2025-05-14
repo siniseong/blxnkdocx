@@ -19,9 +19,10 @@ export default function HomeLayout({
                 "relative flex flex-col z-10",
                 "prose prose-gray dark:prose-invert max-w-none tight-paragraphs",
                 "prose-headings:font-bold prose-headings:tracking-tight",
-                "prose-h1:text-4xl prose-h1:lg:text-5xl prose-h1:pt-12 prose-h1:mt-4",
-                "prose-h2:text-2xl",
-                "prose-p:text-lg prose-p:leading-none prose-p:my-0",
+                "prose-h1:text-4xl prose-h1:lg:text-5xl prose-h1:mt-4",
+                "prose-h2:text-2xl prose-h2:mb-2",
+                "prose-h3:mb-1",
+                "prose-p:text-lg prose-p:leading-relaxed prose-p:my-1",
                 "prose-a:text-primary hover:prose-a:text-primary/80",
                 "prose-img:rounded-none"
               )}
