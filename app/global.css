@@ -2,3 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .fd-nav-link {
+    @apply text-base font-medium hover:text-primary transition-colors;
+  }
+  
+  /* 기본 헤더 스타일 (Fumadocs 자동 헤더) */
+  .fumadocs-nav {
+    @apply flex flex-row items-center;
+  }
+  
+  .fumadocs-nav-links {
+    @apply flex flex-row gap-4;
+  }
+  
+  /* 모바일 메뉴 토글 버튼 숨기기 */
+  .fumadocs-toggle-menu {
+    @apply hidden !important;
+  }
+  
+  /* 모바일 화면에서의 반응형 스타일 */
+  @media screen and (max-width: 767px) {
+    /* 모바일 메뉴 토글 버튼(햄버거) 숨기기 */
+    .fumadocs-toggle-menu,
+    button[aria-label="Toggle menu"] {
+      @apply hidden !important;
+    }
+    
+    /* 네비게이션 링크 컨테이너를 항상 표시 */
+    .fumadocs-header-content nav,
+    .fumadocs-nav-links,
+    .fumadocs-nav-container {
+      @apply flex visible opacity-100 static w-auto max-h-none bg-transparent p-0 m-0 !important;
+      transform: none !important;
+      box-shadow: none !important;
+      pointer-events: auto !important;
+    }
+    
+    /* 네비게이션 링크 스타일 조정 */
+    .fumadocs-nav-links {
+      @apply flex-row gap-4 !important;
+    }
+    
+    /* 네비게이션 링크 항목 스타일 조정 */
+    .fumadocs-nav-links a,
+    .fumadocs-nav-links button {
+      @apply px-2 m-0 h-auto text-sm !important;
+    }
+  }
+}

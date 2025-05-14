@@ -5,7 +5,7 @@
 
   export const baseOptions: HomeLayoutProps = {
     nav: {
-      title: '여백, 면접을 도와드립니다.',
+      title: '여백,',
     },
   };
 
