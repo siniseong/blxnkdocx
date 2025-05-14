@@ -17,7 +17,7 @@ export function Header() {
       <div className="grid grid-cols-2 h-14 items-center px-4 sm:px-6 mx-auto" style={{ maxWidth: '1420px' }}>
         <div className="flex items-center">
           <a href="/" className="flex items-center gap-2 font-semibold">
-            <p>여백,</p>
+            <span className="text-lg">여백,</span>
           </a>
         </div>
 
