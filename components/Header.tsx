@@ -40,7 +40,7 @@ export function Header() {
             <img 
               src="/github.svg" 
               alt="GitHub" 
-              className="h-6 w-6 dark:invert" 
+              className="h-6 w-6 dark:invert min-w-[24px] min-h-[24px]" 
             />
           </a>
         </nav>
