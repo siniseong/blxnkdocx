@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@layer base {
+  h1, h2, h3 {
+    font-family: 'TheJamsil5Bold', sans-serif;
+  }
+}
+
 @layer components {
   .fd-nav-link {
     @apply text-base font-medium hover:text-primary transition-colors;
