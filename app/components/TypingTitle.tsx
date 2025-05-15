@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 export default function TypingTitle() {
   const [text, setText] = useState('');
-  const fullText = "여백이 여러분의 '기술 면접'을 도와줄게요.";
+  const fullText = "여러분의 '기술 면접'을 도와줄게요.";
   const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
