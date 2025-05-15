@@ -249,7 +249,9 @@ table:last-of-type a:focus,
 
 article {
   margin-top: -20px;
-  margin-left: -140px;
+  margin-left: -130px;
+  max-width: 900px !important;
+  width: 100% !important;
 }
 
 
@@ -282,8 +284,8 @@ div[data-toc] h6:hover::after {
 
 div[data-toc] {
   position: fixed !important;
-  top: 5rem !important;
-  right: 8rem !important;
+  top: 4.5rem !important;
+  right: 9rem !important;
   height: calc(100vh - 4rem) !important;
   overflow-y: auto !important;
   width: var(--fd-toc-width) !important;
