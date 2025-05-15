@@ -28,13 +28,13 @@
     <tr>
       <td align="center">
         <a href="https://github.com/siniseong">
-          <img alt="신희성" src="https://avatars.githubusercontent.com/siniseong" width="100" />
+          <img alt="신희성" src="https://avatars.githubusercontent.com/siniseong" />
         </a>
         <a href="https://github.com/siniseong" class="contributor-name">신희성</a>
       </td>
       <td align="center">
         <a href="https://github.com/gyumingim">
-          <img alt="김규민" src="https://avatars.githubusercontent.com/gyumingim" widt  h="100" />
+          <img alt="김규민" src="https://avatars.githubusercontent.com/gyumingim" />
         </a>
         <a href="https://github.com/gyumingim" class="contributor-name">김규민</a>
       </td>
