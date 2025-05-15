@@ -1,32 +1,28 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { Sun, Moon } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useTheme } from 'next-themes';
 
 export function Footer() {
-  const [theme, setTheme] = useState<'light' | 'dark' | null>(null);
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-      setTheme('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      setTheme('light');
-    }
+    setMounted(true);
   }, []);
+
+  if (!mounted) return null;
 
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
-    document.documentElement.classList.toggle('dark');
-    localStorage.setItem('theme', newTheme);
+    // document.documentElement.classList.toggle('dark'); 
+    // localStorage.setItem('theme', newTheme);
     setTheme(newTheme);
   };
 
   return (
-    <footer className="mt-auto border-t border-border py-4 text-sm text-neutral-800 dark:text-neutral-200">
+    <footer className="mt-auto border-t border-border py-4 text-sm text-neutral-800 dark:text-neutral-200 z-20 relative">
       <div className="flex items-center justify-between max-w-[1420px] mx-auto px-4">
         <div>
           Developed by{" "}
@@ -51,4 +47,4 @@ export function Footer() {
       </div>
     </footer>
   );
-} 
+}

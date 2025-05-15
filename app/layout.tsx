@@ -4,6 +4,7 @@ import 'fumadocs-ui/style.css';
 import { Inter } from 'next/font/google';
 import type { ReactNode } from 'react';
 import { Footer } from '@/components/Footer';
+import { ThemeProvider } from 'next-themes';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -20,12 +21,14 @@ export default function Layout({ children }: { children: ReactNode }) {
         />
       </head>
       <body className="min-h-screen flex flex-col">
-        <RootProvider>
-          <main className="flex-1">
-            {children}
-          </main>
-          <Footer />
-        </RootProvider>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <RootProvider>
+            <main className="flex-1">
+              {children}
+            </main>
+            <Footer />
+          </RootProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
