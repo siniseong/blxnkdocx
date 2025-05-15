@@ -19,15 +19,10 @@ export function Footer() {
   }, []);
 
   const toggleTheme = () => {
-    if (theme === 'dark') {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-      setTheme('light');
-    } else {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-      setTheme('dark');
-    }
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', newTheme);
+    setTheme(newTheme);
   };
 
   return (
@@ -46,12 +41,12 @@ export function Footer() {
         </div>
         <button
           type="button"
-          className="inline-flex items-center rounded-full border p-0.5"
+          className="inline-flex items-center rounded-full border p-0.5 transition-all duration-[var(--transition-duration)]"
           aria-label="Toggle Theme"
           onClick={toggleTheme}
         >
-          <Sun width={24} height={24} className={`lucide lucide-sun size-6 rounded-full p-1 bg-fd-accent text-fd-accent-foreground dark:bg-transparent dark:text-fd-muted-foreground ${theme === 'light' ? '' : 'opacity-50'}`} />
-          <Moon width={24} height={24} className={`lucide lucide-moon size-6 rounded-full p-1 text-fd-muted-foreground dark:bg-fd-accent dark:text-fd-accent-foreground ${theme === 'dark' ? '' : 'opacity-50'}`} />
+          <Sun width={24} height={24} className={`lucide lucide-sun size-6 rounded-full p-1 bg-fd-accent text-fd-accent-foreground dark:bg-transparent dark:text-fd-muted-foreground transition-all duration-[var(--transition-duration)] ${theme === 'light' ? '' : 'opacity-50'}`} />
+          <Moon width={24} height={24} className={`lucide lucide-moon size-6 rounded-full p-1 text-fd-muted-foreground dark:bg-fd-accent dark:text-fd-accent-foreground transition-all duration-[var(--transition-duration)] ${theme === 'dark' ? '' : 'opacity-50'}`} />
         </button>
       </div>
     </footer>
