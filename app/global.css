@@ -16,6 +16,19 @@
 }
 
 @layer components {
+  /* Hide the navigation bar while preserving functionality */
+  #nd-subnav {
+    opacity: 0 !important;
+    pointer-events: auto !important; /* Keep functionality accessible */
+  }
+  
+  /* Fix for title visibility issue */
+  .prose h1 {
+    visibility: visible !important;
+    display: block !important;
+    opacity: 1 !important;
+  }
+
   .fd-nav-link {
     @apply text-base font-medium hover:text-primary transition-colors;
   }
@@ -138,6 +151,9 @@
 
   .typing-title {
     @apply text-4xl lg:text-5xl font-bold tracking-tight mt-8;
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
   }
 
   .typing-cursor {
@@ -273,13 +289,11 @@ table:last-of-type a:focus,
   margin-top: -1rem !important;
 }
 
-
 article {
   margin-top: -20px;
   max-width: 900px !important;
   width: 100% !important;
 }
-
 
 div[data-toc] > h3:has(.lucide-text) {
   margin-top: -20px;
@@ -323,10 +337,8 @@ div[data-toc] {
   overflow-y: auto !important;
   width: var(--fd-toc-width) !important;
   background: var(--fd-background) !important;
-
 }
 
 div[data-toc] > div[dir="ltr"] {
   margin-left: 4rem !important;
 }
-
