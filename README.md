@@ -1,17 +1,43 @@
-# docs.literate.ink [![Netlify Status](https://api.netlify.com/api/v1/badges/ce2d6d27-5c7b-4442-bbf3-da0c7c51d402/deploy-status)](https://app.netlify.com/sites/docs-literate-ink/deploys)
+# 여백이 여러분의 '기술 면접'을 도와줄게요.
 
-Comprehensive documentation for all our libraries, complete with detailed API references and guides.
+<TypingTitle />
 
-## Development
+본 문서는 소프트웨어 엔지니어 기술 면접을 준비하는 여러분을 돕기 위해 작성되었습니다. 다양한 기술 회사에서 공통적으로 중요하게 여기는 핵심 역량과 지식을 평가하기 위해 자주 출제되는 질문들을 분야별로 모아 정리하였습니다. 각 질문에 대한 상세한 답변과 함께 관련 개념을 깊이 이해하는 데 초점을 맞추어, 면접에서 자신감을 가지고 여러분의 기술적 역량을 효과적으로 전달할 수 있도록 구성했습니다.
 
-Was made with [Fumadocs](https://fumadocs.vercel.app).
+본 가이드가 기술 면접 준비에 실질적인 도움이 되기를 바랍니다. 단순 암기를를 넘어, 질문의 배경과 관련 기술의 동작 원리를 이해하는 데 집중하시길 권장합니다.
 
-```bash
-npm run dev
-# or
-pnpm dev
-# or
-yarn dev
-```
 
-Open <http://localhost:3000> with your browser to see the result.
+## 시작하기
+아래에서 공부할 파트를 클릭해 시작하세요.
+- [프론트엔드 면접 준비하기](/frotend)
+- [백엔드 면접 준비하기](/backend)
+- [UI/UX 면접 준비하기](/design)
+- [Devops 면접 준비하기](/devops)
+- [보안 면접 준비하기](/security)  
+- [임베디드 면접 준비하기](/embeded)
+
+## 기여 방법
+
+여러분의 소중한 기여로 이 문서를 더 완성도 높게 만들어 주세요. 엄격한 커밋 메시지나 PR 형식에 얽매이지 않고, 자유롭고 편하게 참여하실 수 있습니다.
+
+작은 오타 수정부터 내용 보완, 새로운 질문 추가까지 어떤 형태의 기여도 환영합니다.
+
+## 기여해 주셔서 감사합니다 :)
+<table>
+  <tbody>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/siniseong">
+          <img alt="신희성" src="https://avatars.githubusercontent.com/siniseong" width="100" />
+        </a>
+        <a href="https://github.com/siniseong" class="contributor-name">신희성</a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/gyumingim">
+          <img alt="김규민" src="https://avatars.githubusercontent.com/gyumingim" widt  h="100" />
+        </a>
+        <a href="https://github.com/gyumingim" class="contributor-name">김규민</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
