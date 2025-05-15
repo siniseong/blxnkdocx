@@ -25,9 +25,9 @@ export default function TypingTitle() {
   }, [isTyping]);
 
   return (
-    <h1 className="typing-title">
+    <h1 className="typing-title" style={{ paddingTop: '20px' }}>
       {text}
       <span className="typing-cursor">|</span>
     </h1>
   );
-} 
+}

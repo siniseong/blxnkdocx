@@ -16,13 +16,14 @@
 }
 
 @layer components {
-  /* Hide the navigation bar while preserving functionality */
   #nd-subnav {
     opacity: 0 !important;
-    pointer-events: auto !important; /* Keep functionality accessible */
+    pointer-events: auto !important;
+    margin-top: 0;
+    padding-left: 0.125rem !important;
+    padding-right: 0.125rem !important;
   }
   
-  /* Fix for title visibility issue */
   .prose h1 {
     visibility: visible !important;
     display: block !important;
@@ -140,7 +141,15 @@
     content: none !important;
   }
 
-  .prose blockquote::after {
+  .prose blockquote::after {:root {
+  --typing-title-margin: 0;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --typing-title-margin: 80px;
+  }
+}
     content: none !important;
   }
 
@@ -150,7 +159,7 @@
   }
 
   .typing-title {
-    @apply text-4xl lg:text-5xl font-bold tracking-tight mt-8;
+    @apply text-4xl lg:text-5xl font-bold tracking-tight;
     visibility: visible !important;
     opacity: 1 !important;
     display: block !important;

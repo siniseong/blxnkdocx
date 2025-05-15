@@ -10,11 +10,12 @@ export default {
     './node_modules/fumadocs-ui/dist/**/*.js',
   ],
   presets: [createPreset()],
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [require('@tailwindcss/typography')],
   theme: {
     extend: {
+      colors: {
+        primary: '#1d4ed8', // Tailwind 기본 파랑 (원하는 색으로 변경 가능)
+      },
       typography: {
         DEFAULT: {
           css: {
@@ -41,7 +42,7 @@ export default {
               paddingTop: '0',
               paddingBottom: '0',
             },
-            'blockquote': {
+            blockquote: {
               marginTop: '0.5em',
               marginBottom: '0.5em',
               paddingTop: '0.5em',
