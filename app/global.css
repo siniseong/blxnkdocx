@@ -249,7 +249,7 @@ table:last-of-type a:focus,
 
 article {
   margin-top: -20px;
-  margin-left: 24px;
+  margin-left: -140px;
 }
 
 
@@ -278,6 +278,17 @@ div[data-toc] h6:hover::after {
 #nd-sidebar {
   margin-left: -0.5rem;
   margin-right: 2rem;
+}
+
+div[data-toc] {
+  position: fixed !important;
+  top: 5rem !important;
+  right: 8rem !important;
+  height: calc(100vh - 4rem) !important;
+  overflow-y: auto !important;
+  width: var(--fd-toc-width) !important;
+  background: var(--fd-background) !important;
+
 }
 
 div[data-toc] > div[dir="ltr"] {
