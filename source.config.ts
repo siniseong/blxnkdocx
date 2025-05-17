@@ -1,3 +1,5 @@
-import { defineConfig } from 'fumadocs-mdx/config';
+import { defineDocs, defineConfig } from 'fumadocs-mdx/config';
 
-export default defineConfig({});
+export const { docs, meta } = defineDocs();
+
+export default defineConfig();
