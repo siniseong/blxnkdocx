@@ -53,4 +53,4 @@ export default function TypingText({ text, speed = 50, className = '' }: TypingT
       </svg>
     </div>
   );
-} 
+}   

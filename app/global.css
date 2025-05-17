@@ -3,17 +3,19 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'TheJamsil5Bold';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
-    font-weight: 700;
+    font-family: 'Arita-dotum-Medium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
-@layer base {
-  h1, h2, h3 {
-    font-family: 'TheJamsil5Bold', sans-serif;
-  }
+:root {
+  font-family: 'Arita-dotum-Medium', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
+
+
 
 @layer components {
   #nd-subnav {

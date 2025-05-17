@@ -9,3 +9,5 @@ export const { GET } = createSearchAPI('advanced', {
     url: page.url,
   })),
 });
+
+
